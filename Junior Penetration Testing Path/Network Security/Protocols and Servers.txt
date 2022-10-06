@@ -1,0 +1,89 @@
+1. Telnet: application layer protocol used to connect to a virtual terminal of another computer
+-access console to run programs, start batch processes and perform system admin tasks remotely
+-login using username and password
+-not encrypted
+-uses telnet protocol to listen for incoming connections on port 23
+eg: telnet [IP]
+-not reliable for access to remote system bc all data is sent in clear text
+
+2. HTTP: protocol used to transfer web pages. 
+-connects to the webserver and uses HTTP to request HTML pages and images, submit forms, upload files etc
+-sends and receives data as cleartext (not encrypted)
+-need HTTP server(webserver) and an HTTP client (web browser) to use HTTP protocol
+-Three Popular HTTP servers (Apache, Internet Information Services(IIS), Nginx)
+-Web browsers (Chrome, Edge, Firefox, Safari)
+
+3. FTP: File Transfer Protocol
+-created to make transfer of files between different computers efficient
+-sends and receives data as cleartext
+-default port 21
+1. connect to an FTP server using Telnet client
+2. provide user and pass
+usefull commands:
+- 'STAT' - provide some added information
+- 'SYST' - shows the system type of the target
+- 'PASV' - switches mode to passive
+- 'TYPE A' - switches file transfer to ASCII
+- 'TYPE I' - switches file transfer mode to binary
+Active mode - data is sent over a separate channel originating from the FTP server's port 20
+Passive mode - data is sent over a separate channel originating from an FTP client's port above port 1023
+After logged in:
+'ftp>' - execute various commands
+'ls' - list files
+'get [FILE NAME]' - client and server extablish another channel for file transfer
+
+4. SMTP: Simple Mail Transfer Protocol
+-Email system can be used to allow local users to exchange emails with each other without access to the internet
+-multiple components
+1. Mail Submmision Agent (MSA) - has email to be sent, connects to MUA to send message, checks for errors before passing to MTA
+2. Mail Transfer Agent (MTA) - send the emamil message to MTA of the recipient 
+3. Mail Delivery Agent (MDA) - passed to MDA to deliver to email client
+4. Mail User Agent (MUA) - agent send the mail
+Two protocols
+1. Simple Mail Transfer Protocol (SMTP)
+2. Post Office Protocol Version 3 (POP3) or Internet Message Access Protocol (IMAP)
+SMTP - communicate using an MTA server
+-cleartext
+-default port 25 by default
+steps: 
+1. telnet [IP] 25
+2. helo [hostname]
+3. mail from: 
+4. rcpt to:
+5. data 
+6. -ENTER '.' Enter to send
+
+5. Post Office Protocol 3 (POP3)
+-used to download email messages from a mail delivery agent (MDA)
+-default port 110
+-steps:
+1. telnet [IP] 110
+2. USER [username]
+3. PASS [password]
+4. 'STAT'
+--reply +OK nn mm--
+nn: number of email messages in the inbox
+mm: size of the inbox in octates (byte)
+5. 'LIST'
+-list of messages on server-
+6. 'RETR [number]' 
+--retrive message from list--
+
+6. Internet Message Access Protocol (IMAP)
+-more synchronized than POP3
+-keep email syncronized across multiple devices and mail clients
+-default port: 143
+-IMAP requires each command to be preceded by a random string to be able to track the reply, c1, c2, etc
+-List mail folders: 'LIST "" "*"'
+-steps: 
+1. telnet [IP] 143
+2. c1 LOGIN [username] [password]
+3. c2 LIST "" "*"
+
+Protocol	TCP Port	Application(s)	Data Security
+FTP		21		File Transfer	Cleartext
+HTTP		80		Worldwide Web	Cleartext
+IMAP		143		Email (MDA)	Cleartext
+POP3		110		Email (MDA)	Cleartext
+SMTP		25		Email (MTA)	Cleartext
+Telnet		23		Remote Access	Cleartext
