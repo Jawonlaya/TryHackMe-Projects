@@ -1,4 +1,4 @@
-# dogcat - Medium
+# Dogcat - Medium
 
 ```shell
 nmap -T4 -p- -A -v 10.10.161.226
