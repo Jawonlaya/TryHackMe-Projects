@@ -1,4 +1,4 @@
-# tomghost - Easy
+# Tomghost - Easy
 
 ```shell
 nmap -T4 -p- -A -v 10.10.2.190
