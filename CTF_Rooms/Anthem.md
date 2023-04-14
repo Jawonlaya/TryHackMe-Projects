@@ -90,7 +90,7 @@ cmseek
 ## Final stage
 
 ```shell
-xfreerdp /u:SG /p:"UmbracoIsTheBest\!" /v:10.10.35.181 /port:3389
+xfreerdp /u:SG /p:"UmbracoIsTheBest\!" /v:10.10.152.207 /port:3389
 #this works
 ```
 
