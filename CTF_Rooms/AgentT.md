@@ -35,7 +35,7 @@ Now, the initial Gobuster scan did not give us the intended results so we used i
 
 The Gobuster scans do not give us any info, so we can move on to other forms of enumeration.
 
-Following the given hint, we inspect the webpage headers using cURL.
+Following the given hint, we inspect the webpage headers using the curl command.
 
 This shows us a header called 'X-Powered-By: PHP/8.1.0-dev'
 
