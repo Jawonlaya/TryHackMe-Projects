@@ -78,9 +78,10 @@ Now we understand our enumeration tools, let's get started!
 ```markdown
 1. Conduct an nmap scan of your choosing, How many ports are open? - 3
 2. What ports is SMB running on? - 
-3. Let's get started with Enum4Linux, conduct a full basic enumeration. For starters, what is the workgroup name? - 
-4. What comes up as the name of the machine? -
-5. What operating system version is running? -
-6. What share sticks out as something we might want to investigate? -
+3. Let's get started with Enum4Linux, conduct a full basic enumeration. For starters, what is the workgroup name? - Workgroup
+4. What comes up as the name of the machine? - POLOSMB
+5. What operating system version is running? - 6.1
+6. What share sticks out as something we might want to investigate? - profiles
 ```
 
+## Exploiting SMB
