@@ -1,8 +1,9 @@
 # TryHackMe-Projects
 <!-- TryHackMe Profile and Badges -->
 <div align="center">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/Jawonlaya.png" alt="TryHackMe">
-  
+
+ <a target="_blank" href="https://tryhackme.com/p/Jawonlaya"><img src="https://tryhackme-badges.s3.amazonaws.com/Jawonlaya.png" alt="TryHackMe">
+
 </div>
 <div align="center">
   <a target="_blank" href="https://tryhackme.com/Jawonlaya/badges/network-fundamentals" ><img title="Networking Nerd" alt="TryHackMe badge 1" src="https://tryhackme.com/img/badges/networkfundamentals.svg" width="100"></a>
