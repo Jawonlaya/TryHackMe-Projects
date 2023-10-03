@@ -3,7 +3,7 @@
 ### Log Operations
 The first thing that comes to mind regarding log analysis is to open the door to the adventure of looking for a needle in a haystack. In case of an incident investigation, are you lost in the log space and wasting your precious time? If so, it's time to do something about log configuration.
 
-In this room, you will learn the configuration approaches required to manage and analyse logs in an operational context and the log information you learned in the previous introductory room.
+In this room, you will learn the configuration approaches required to manage and analyze logs in an operational context and the log information you learned in the previous introductory room.
 
 ### Learning Objectives
 
@@ -15,11 +15,11 @@ In this room, you will learn the configuration approaches required to manage and
 
 "Do you dare to configure your logs, or are you happy to be lost in the madness of the thousands of lines?" In log operations, there are multiple concerns about configuration approaches, and identifying the suitable configuration approach could be a pain point. 
 
-Log configuration is a multifaceted operation that addresses security, operational stability, regulatory compliance, and debugging needs. Adequately configured logs are crucial in cyber security, operational efficiency, regulatory compliance, and software development, providing organisations with comprehensive system, asset, and resource management statistics. Let's look at and understand the scopes and differences of common purposes of log configuration. 
+Log configuration is a multifaceted operation that addresses security, operational stability, regulatory compliance, and debugging needs. Adequately configured logs are crucial in cyber security, operational efficiency, regulatory compliance, and software development, providing organizations with comprehensive system, asset, and resource management statistics. Let's look at and understand the scopes and differences of common purposes of log configuration. 
 
 ### Security Purposes
 
-Logging and configuration for security purposes are typically planned to detect and respond to anomalies and security issues. For example, configuration to verify the authenticity of user activity to ensure authorisation control and timely detection of unauthorised access. The main focus areas of this approach are:
+Logging and configuration for security purposes are typically planned to detect and respond to anomalies and security issues. For example, configuration to verify the authenticity of user activity to ensure authorization control and timely detection of unauthorized access. The main focus areas of this approach are:
 
 - Anomali and threat detection
 - Logging user authentication data
@@ -70,7 +70,7 @@ Remember, each log configuration purpose is planned and implemented to fulfill a
 - How are you going to store collected logs?
 - `Is there a standard, process, legislation, or law that you must comply with due to the data you log?`
 - How are you going to protect the logs?
-- How are you going to analyse collected logs?
+- How are you going to analyze collected logs?
 - Do you have enough resources and workforce to do logging?
 - Do you have enough budget to plan, implement, and maintain logging?
   
@@ -82,11 +82,11 @@ Remember, each log configuration purpose is planned and implemented to fulfill a
 
 Configuration dilemma reflects the challenges of implementation. As highlighted in the previous task, each log configuration scope comes with responsibilities, guidelines, and challenges. This means that the log configuration and logging are more than a simple practice of enabling logging from the assets and surviving among thousands of lines.
 
-Each log configuration plan results from a unique analysis of the scope, assets, objectives, requirements, and expectations to be applied. Expectations, requirements, and limits are determined with the involvement of system administrators, legal and financial advisors, and managers, if possible. In summary, the main source of the dilemma is finding the balance between requirements, scope, details, and price (financial and labour costs, risks, and investment). During the meeting, there might be some points where participants get off the point, but it is vital to keep in mind that the main objective of the meeting is:
+Each log configuration plan results from a unique analysis of the scope, assets, objectives, requirements, and expectations to be applied. Expectations, requirements, and limits are determined with the involvement of system administrators, legal and financial advisors, and managers, if possible. In summary, the main source of the dilemma is finding the balance between requirements, scope, details, and price (financial and labor costs, risks, and investment). During the meeting, there might be some points where participants get off the point, but it is vital to keep in mind that the main objective of the meeting is:
 
 - Meeting specific operational and security requirements (non-negotiable) while also considering the feasibility of improving the capability by implementing additional data and insights.
 
-Last but not least, a comprehensive risk assessment, prioritising security, compliance, and legal needs will be helpful to navigate this dilemma. Finding the balance in "operational and management" level decisions and achieve secure, efficient, proactive, resilient, and sustainable outcomes in the ever-evolving threat/IT landscape and technical operations.
+Last but not least, a comprehensive risk assessment, prioritizing security, compliance, and legal needs will be helpful to navigate this dilemma. Finding the balance in "operational and management" level decisions and achieve secure, efficient, proactive, resilient, and sustainable outcomes in the ever-evolving threat/IT landscape and technical operations.
 
 ### Translating "Requirements" and "Aspirations" To Operational Level
 
@@ -114,7 +114,7 @@ Challenges are as much a part of log management as principles. However, most of 
 
 ![Screenshot 2023-10-02 at 23 51 41](https://github.com/Jawonlaya/TryHackMe-Projects/assets/115058054/8c8b7740-99c5-4b6c-8a87-00c01c3eda71)
 
-### Where To Go From Here
+### Task 5 Challenge: Where To Go From Here
 
 The mentioned principles and challenges are common and can vary according to your case. However, the main point is adhering to logging principles and proactively addressing challenges.
 
@@ -124,4 +124,37 @@ Which of the given logging principles would be implemented and improved - `Archi
 - Your team implemented a brand new API logging product. One of the team members has been tasked with collecting the logs generated by that new product. The team member reported continuous errors when transferring the logs to the review platform.
 In this case, which of the given difficulties occurs - `Process and Archive`
 
+## Task 6: Common Mistakes and Best Practices
 
+Logging is a powerful and valuable tool for cyber security and IT operations. But harnessing this power and maximising it takes solid planning and implementation. Otherwise, logging will become inefficient, making things difficult to do, tedious to manage, and draining resources.
+
+In addition to the high and low-level details, strategies and suggestions discussed until this point, a few more things require your attention. Logging is a continuous and live operation which needs continuous maintenance and improvement. Therefore, the infamous "if it works, don't touch it!" approach is unacceptable. The threats and computing technologies evolve and change; therefore, you must update your configurations and adapt the changes accordingly. Implementing the following actions is a good place to start the self-assessment and improvement process.
+
+- Learn from mistakes and failures.
+- Track the sectoral threat dynamics for the operated sector and conduct regular scope and resilience testing.
+- Follow the best practices of industry leaders and experts.
+
+If you ever think about how important to re-configure, update, or test your existing logging configurations is, please consider the following real-life experience faced by millions of people worldwide.
+
+![Screenshot 2023-10-02 at 23 59 22](https://github.com/Jawonlaya/TryHackMe-Projects/assets/115058054/bbdba778-47d0-4c70-bbe3-c7fc1f691008)
+
+### Common Mistakes and Best Practices
+
+First, you should use consultancy services if you are short on time and need a solution that directly fits your systems. Tailored-up solutions require comprehensive risk assessment practices, as highlighted in the previous tasks. However, avoiding some known pain points and deadlock cases is possible by considering the "dos" and "don'ts" in the planning and implementation steps. Therefore, the main point of this section is understanding "what does work" and "what doesn't".
+
+![Screenshot 2023-10-03 at 00 00 08](https://github.com/Jawonlaya/TryHackMe-Projects/assets/115058054/708ac99f-4913-4e8f-aa94-3584b65d8315)
+
+### Task 6 Challenge: Where To Go From Here
+
+
+As a consultant, you are doing a comprehensive risk assessment and noticed that one of the development teams implemented a custom script to generate logs for an old system, which omits loggings at some phases.
+
+What you would call this? (Mistake or Practice?) - `Mistake`
+
+## Taks 7: Challenge
+
+In this room, we dived deep into log operations and discovered the background and management side of the technical logging and log analysis operations by covering:
+
+- Fundamentals of log configuration.
+- Logging use cases.
+- Common mistakes and learn best practices in logging.
